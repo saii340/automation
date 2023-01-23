@@ -28,7 +28,7 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
     - name: building image
-      run: docker build -t automation
+      run: docker build -t automation .
     - name: taging image
       run: docker tag automation:latest 989813064368.dkr.ecr.us-west-2.amazonaws.com/automation:latest
     - name: pushing image
