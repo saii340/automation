@@ -4,3 +4,5 @@ if a>b:
     print(b)
 elif a<b:
     print(a)
+if a==b:
+    print("54")
