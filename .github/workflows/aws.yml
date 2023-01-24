@@ -54,3 +54,14 @@ jobs:
       run: terraform init
     - name: building terraform
       run: terraform apply -auto-approve
+    - name: pulling
+      run: docker pull 989813064368.dkr.ecr.us-west-1.amazonaws.com/test:latest
+    - name: running image
+      run: docker run 989813064368.dkr.ecr.us-west-1.amazonaws.com/test:latest
+    - name: showing a list all container
+      run: docker ps -a
+    - name: to start containers
+      run: docker ps -q -a
+    - name: showing a list of running containers
+      run: docker ps
+
