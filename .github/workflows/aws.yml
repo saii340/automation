@@ -53,4 +53,4 @@ jobs:
     - name: intializing terraform
       run: terraform init
     - name: building terraform
-      run: terraform apply -y
+      run: terraform apply -auto-approve
