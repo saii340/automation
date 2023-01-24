@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "putty" {
-  ami = "ami-0ceecbb0f30a902a6"
+  ami = "ami-095413544ce52437d"
   instance_type = "t2.micro"
   tags = {
     "name" = "java"
