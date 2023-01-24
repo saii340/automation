@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "ubuntu" {
-    ami = "ami-00d8a762cb0c50254"
+    ami = "ami-0ceecbb0f30a902a6"
     instance_type = "t2.micro"
     subnet_id="subnet-049687eef0c714710"
     security_groups=["sg-0928d4152418606f5"]
