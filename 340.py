@@ -4,5 +4,5 @@ if a>b:
     print(b)
 elif a<b:
     print(a)
-if a==b:
+elif a==b:
     print("hello")
