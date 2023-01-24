@@ -52,6 +52,5 @@ jobs:
       run: terraform --version
     - name: intializing terraform
       run: terraform init
-    - uses: actions/checkout@v3
     - name: building terraform
       run: terraform apply -auto-approve
