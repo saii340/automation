@@ -52,7 +52,6 @@ jobs:
       run: terraform --version
     - name: intializing terraform
       run: terraform init
-    - name: moving file
-      run: sudo mv main.tf /terraform
+    - uses: actions/checkout@v3
     - name: building terraform
       run: terraform apply -auto-approve
