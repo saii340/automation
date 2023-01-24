@@ -33,6 +33,10 @@ jobs:
       run: docker tag automation:latest 989813064368.dkr.ecr.us-west-2.amazonaws.com/automation:latest
     - name: pushing image
       run: docker push 989813064368.dkr.ecr.us-west-2.amazonaws.com/automation:latest
+    - name: terraform directory
+      run : mkdir terraform
+    - name: ading file
+      run : cp main.tf terraform
     - uses: actions/checkout@v3
     - name: intializing terraform
       run: terraform init
