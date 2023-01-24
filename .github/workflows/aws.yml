@@ -54,7 +54,5 @@ jobs:
       run: terraform init
     - name: moving file
       run: sudo mv main.tf /terraform
-    - name: plan
-      run: terraform plan
     - name: building terraform
       run: terraform apply -auto-approve
