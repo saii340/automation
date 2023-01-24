@@ -28,11 +28,11 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
     - name: building image
-      run: docker build -t automation .
+      run: docker build -t test .
     - name: taging image
-      run: docker tag automation:latest 989813064368.dkr.ecr.us-west-2.amazonaws.com/automation:latest
+      run: docker tag test:latest 989813064368.dkr.ecr.us-west-1.amazonaws.com/test:latest
     - name: pushing image
-      run: docker push 989813064368.dkr.ecr.us-west-2.amazonaws.com/automation:latest
+      run: docker push 989813064368.dkr.ecr.us-west-1.amazonaws.com/test:latest
     - name: terraform directory
       run : mkdir terraform
     - name: ading file
