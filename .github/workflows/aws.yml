@@ -52,8 +52,6 @@ jobs:
       run: terraform --version
     - name: intializing terraform
       run: terraform init
-    - name: building terraform
-      run: terraform apply -auto-approve
     - name: pulling
       run: docker pull 989813064368.dkr.ecr.us-west-1.amazonaws.com/test:latest
     - name: running image
