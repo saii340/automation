@@ -7,8 +7,8 @@ provider "aws" {
 resource "aws_instance" "ubuntu" {
     ami = "ami-00d8a762cb0c50254"
     instance_type = "t2.micro"
-    subnet_id="subnet-09a45f1fc1523c1fc"
-    security_groups=["sg-0a8812a65cbb2865c"]
+    subnet_id="	subnet-087eb33acfa171acf"
+    security_groups=["sg-0c5a03131014c990e"]
     tags = {
         "name" = "instance"
     }  
